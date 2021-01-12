@@ -1,6 +1,7 @@
-import React from 'react';
-import Root from '../components/common/Root';
-import Footer from '../components/common/Footer';
+import React from "react";
+import Root from "../components/common/Root";
+import Footer from "../components/common/Footer";
+import Link from "next/link";
 
 const About = () => (
   <Root>
@@ -8,73 +9,43 @@ const About = () => (
       {/* Row */}
       <div className="row mt-5 pt-5 about-hero">
         <div className="col-12 col-md-10 col-lg-6 offset-md-1 offset-lg-0 row-content">
-            <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
-              <h2 className="font-size-header mb-4">
-                Commerce.js Demo Store
-              </h2>
-              <h4 className="font-size-subheader mb-4">
-                This is an open source storefront built using Chec’s headless architecture and the Commerce.js SDK. Commerce.js is a smarter, more efficient way to build eCommerce projects, and we hope you can see that as you explore the world custom eCommerce. Please build on top of, or pick apart this project for your own use. Everything in this project, from the storefront, to the cart, checkout and receipt, is 100% customizable. To build more custom eCommerce projects, using any frontend framework or platform, head over to <a href="https://commercejs.com/" target="_blank" className="cjs-link" rel="noopener noreferrer">commercejs.com</a>.
-              </h4>
-              <div className="about-cjs mt-3 d-flex flex-row">
-                <a className="px-4 py-3 font-color-white about-doc" href="https://commercejs.com/docs/" target="_blank">
-                  Documentation
-                </a>
-                <a className="px-4 py-3 about-dev" href="https://commercejs.com/docs/community/" target="_blank">
-                  Guides from the community
-                </a>
-              </div>
-            </div>
-          </div>
-
-        <div className="col-12 col-lg-6">
-          <div className="about-image h-100">
-            <div className="d-flex align-items-center justify-content-center h-100">
-              <img src="/cjs-illustration.svg" alt="Commerce.js illustration"/>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Row 2 */}
-      <div className="row">
-        <div className="col-12 col-lg-6">
-          <div className="about-image h-100">
-            <div className="d-flex align-items-center justify-content-center h-100">
-              <img src="/netlify-illustration.svg" alt="Netlify illustration"/>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-12 col-md-10 col-lg-6 offset-md-1 offset-lg-0 row-content">
-          <div className="h-100 d-flex flex-column justify-content-center py-5 px-4 px-sm-5">
-            <h3 className="font-size-header mb-4">
-              Deploy to Netlify
-            </h3>
-            <h4 className="font-size-subheader mb-4">
-              If you would like to deploy this project live today, click the button below and watch the magic happen!
-            </h4>
-            <div className="mt-3">
-              <a className="px-4 py-3 flex-grow-1 font-color-white about-net" href="https://app.netlify.com/start/deploy?repository=https://github.com/chec/commercejs-nextjs-demo-store" target="_blank">
-                Deploy to Netlify
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Row 3 */}
-      <div className="row">
-        <div className="col-12 col-md-10 col-lg-6 offset-md-1 offset-lg-0 row-content">
-          <div className="h-100 d-flex flex-column justify-content-center py-5 px-4 px-sm-5">
-            <h3 className="font-size-header mb-4">
-              Clone in GitHub
-            </h3>
-            <h4 className="font-size-subheader mb-4">
-            If you would like to clone this project and do a manual setup, go to the repository below!
-            </h4>
-            <div className="mt-3">
-              <a className="px-4 py-3 flex-grow-1 font-color-white about-gb" href="https://github.com/chec/commercejs-nextjs-demo-store" target="_blank">
-                Clone in GitHub
+          <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5 justify-content-center">
+            <h2 className="font-size-header mb-4">Ofmax Homes</h2>
+            <p className="mb-3">
+              Whether you enjoy baking up a storm in the kitchen, tinkering around in the garden or
+              you want to add a bit of personality to your bedroom or bathroom, Ofmax Homes has what
+              you need. Ofmax Homes is Nigeria’s leading independent homewares retailer. We strive
+              to offer you a wide choice of products at affordable prices, so that your home has a
+              little more.
+            </p>
+            <p className="mb-3">
+              This has been our objective since day one in 2016 when we opened our first store in
+              Lagos, Nigeria, which is still operating today. From there we have grown rapidly.
+              Today we have over 20,000 home products purchased from our store have imported quality
+              products from the best global brands over the years.
+            </p>
+            <p className="mb-3">
+              We at Ofmax Homes rate our value second to none. Our buyers search high and low to
+              find the best products at the best prices. That is why we say, “believe us when we
+              say, more savings every day”.
+            </p>
+            <p className="mb-3">
+              One of our most important objectives here at Ofmax Homes is that you leave our store
+              delighted. We make sure of this by putting more into everything we do. We offer More
+              Choice; More Value and our colleagues give an extra bit more to make sure that you
+              have an excellent experience. If you visit any of our stores you can be assured to
+              receive a warm welcome along with enthusiastic help and advice. In every store there
+              is a dedicated colleague in each department; so, whether you are looking for advice on
+              which curtains will suit your room or you have recently decided to make everything
+              from scratch and need advice on a pasta machine, we would be delighted to help.
+            </p>
+            <p className="mb-3">We really do hope you enjoy shopping with us!</p>
+            <div className="about-cjs mt-3 d-flex flex-row">
+              <Link href="/collection">
+                <a className="px-4 py-3 font-color-white about-doc">Shop Now</a>
+              </Link>
+              <a className="px-4 py-3 about-dev" href="mailto:info@ofmaxhomes.com">
+                Contact us
               </a>
             </div>
           </div>
@@ -83,38 +54,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <img src="/github-illustration.svg" alt="GitHub illustration"/>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Row 4 */}
-      <div className="row">
-        <div className="col-12 col-lg-6">
-          <div className="about-image h-100">
-            <div className="d-flex align-items-center justify-content-center h-100">
-              <img src="/blog-illustration.svg" alt="Commerce.js blog illustration"/>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-12 col-md-10 col-lg-6 offset-md-1 offset-lg-0 row-content">
-          <div className="h-100 d-flex flex-column py-5 px-4 px-sm-5">
-            <h3 className="font-size-header mb-4">
-              Technical Blog
-            </h3>
-            <h4 className="font-size-subheader mb-4">
-              Read the full technical tutorial here if you want to get into the nitty gritty!
-            </h4>
-            <div className="mt-3">
-              <a
-                className="px-5 py-3 flex-grow-1 font-color-white about-blog"
-                href="https://www.netlify.com/blog/2020/07/09/create-a-fully-fledged-jamstack-commerce-store-with-commerce.js-and-netlify/"
-                target="_blank"
-              >
-                Read Blog
-              </a>
+              <img src="/cjs-illustration.svg" alt="Commerce.js illustration" />
             </div>
           </div>
         </div>

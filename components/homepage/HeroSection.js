@@ -22,6 +22,7 @@ const images = [
   "/images/home-2.jpg",
   "/images/home-3.jpg",
   "/images/home-4.jpg",
+  "/images/home-5.jpg",
 ];
 
 export default class HeroSection extends Component {
@@ -34,7 +35,7 @@ export default class HeroSection extends Component {
               <div
                 className="hero-slide d-flex align-items-center justify-content-center flex-column font-color-white py-5"
                 style={{
-                  backgroundImage: `url("${image}")`,
+                  backgroundImage: `linear-gradient(rgb(29 70 113 / 60%), rgba(195, 55, 100, 0.3)), url("${image}")`,
                 }}
               >
                 <p className="font-size-display5 font-family-secondary mb-4 text-center hero-header">

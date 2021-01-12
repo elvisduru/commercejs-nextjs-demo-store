@@ -1,14 +1,14 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 export default function HomeBanner() {
   return (
     <div className="p-5">
       <p
         className="font-size-display1 mt-5 text-center mx-auto text-uppercase"
-        style={{ maxWidth: '53rem' }}
+        style={{ maxWidth: "53rem" }}
       >
-        Moisture is the essence of wetness, and wetness is the essence of beauty.
+        Furniture and inspiration for a better everyday life at home.
       </p>
       <div className="d-flex align-items-center justify-content-center mt-3 mb-5">
         <Link href="/about">
