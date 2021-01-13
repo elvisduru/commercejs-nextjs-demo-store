@@ -18,11 +18,16 @@ const params = {
   },
 };
 const images = [
-  "/images/home-1.jpg",
-  "/images/home-2.jpg",
-  "/images/home-3.jpg",
-  "/images/home-4.jpg",
-  "/images/home-5.jpg",
+  "/images/home-1.JPG",
+  "/images/home-2.JPG",
+  "/images/home-3.JPG",
+  "/images/home-4.JPG",
+  "/images/home-5.JPG",
+  "/images/home-6.JPG",
+  "/images/home-7.JPG",
+  "/images/home-8.JPG",
+  "/images/home-9.JPG",
+  "/images/home-10.JPG",
 ];
 
 export default class HeroSection extends Component {

@@ -3,7 +3,7 @@ header {
 }
 
 .header {
-  padding: 1.5rem 3rem;
+  padding: 2rem 3rem;
   background-color: transparent;
   border-bottom: 1px solid;
   border-color: transparent;
@@ -38,7 +38,16 @@ header {
 
   .logo {
     width: auto;
-    height: 0.8rem;
+    // height: 0.8rem;
+    height: 80px;
+
+    &.invert {
+      filter: invert(1);
+    }
+
+    @include small-xs {
+      height: 60px;
+    }
   }
 
   .cart-count {

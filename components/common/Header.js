@@ -101,8 +101,10 @@ class Header extends Component {
 
     if (window.scrollY > 10) {
       this.header.current.classList.add("invert");
+      this.header.current.querySelector(".logo").classList.remove("invert");
     } else {
       this.header.current.classList.remove("invert");
+      this.header.current.querySelector(".logo").classList.add("invert");
     }
   }
 
@@ -181,6 +183,11 @@ class Header extends Component {
           }`}
         >
           <div className="d-none d-sm-flex">
+            <Link href="/">
+              <a href="/" className="mr-4 font-color-black">
+                Home
+              </a>
+            </Link>
             <Link href="/collection">
               <a href="/collection" className="mr-4 font-color-black">
                 Shop
@@ -201,7 +208,11 @@ class Header extends Component {
             />
             <Link href="/">
               <a>
-                <img src="/images/ofmaxlogo.svg" className="logo cursor-pointer" alt="Logo" />
+                <img
+                  src="/images/ofmaxlogo.png"
+                  className={`logo cursor-pointer ${transparent ? "invert" : ""}`}
+                  alt="Logo"
+                />
               </a>
             </Link>
           </div>

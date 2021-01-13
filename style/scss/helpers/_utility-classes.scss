@@ -604,6 +604,18 @@
   line-height: 4.5rem;
 }
 
+@media (max-width: 500px) {
+  .font-size-display5 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  .font-size-title {
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+}
+
 // --------------------------------
 // Font Weight
 // --------------------------------
