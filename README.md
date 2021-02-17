@@ -1,4 +1,4 @@
-# Demo Store with Commerce.js and Next.js 🛍️💳
+# Ofmax Store built with Commerce.js and Next.js 🛍️💳
 
 [![Netlify Status](https://img.shields.io/netlify/157bb2e2-611e-4bbd-9a59-c876f8c3c58a?style=for-the-badge)](https://app.netlify.com/sites/commercejs-demo-store/deploys)
 [![Stars](https://img.shields.io/github/stars/chec/commercejs-nextjs-demo-store?style=for-the-badge)](https://github.com/chec/commercejs-nextjs-demo-store)
@@ -32,10 +32,7 @@ A high-fidelity fully-fledged eCommerce demo store built using the [Commerce.js]
 
 ## Overview
 
-This README will guide you in getting up and running with a fully-fledged eCommerce template. We have configured this template for you to one-click deploy directly to Netlify. Alternatively, you can manually deploy to your choice of hosting platform.
-
-For a full detailed tutorial on building this JAMstack eCommerce application, please head on over [here](https://www.netlify.com/blog/2020/07/09/create-a-fully-fledged-jamstack-commerce-store-with-commerce.js-and-netlify/).
-
+This ReadMe will guide you on how to set up this ecommerce store
 
 ## Prerequisites
 
